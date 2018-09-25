@@ -1,0 +1,66 @@
+page-welcome {
+
+    .button-md {
+        margin: auto ! important;
+        border-radius: 7px;
+        height:4.5rem;
+        width: 87%;
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        font-family:"Loto_Bold"
+    }
+    .button-ios {
+        margin: auto ! important;
+        border-radius: 7px;
+        height:4.5rem;
+        width: 87%;
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        font-family:"Loto_Bold"
+    }
+    .div-outer{
+        height: 4.2rem;
+        width: 100%;
+        bottom: 6%;
+        position: absolute;
+        padding: 15px
+    }
+    .div-inner{
+        height:100%;
+        width:50%;
+        display:flex;
+        float:left
+      
+    }
+
+    p{
+    position: fixed;
+    bottom: 11%;
+    width:100%;
+    color:#5A5A5A;
+    font-family:"Loto_Bold";
+    text-align: center
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        top:20%;
+        position: relative;
+    }
+    .img-container {
+        position: relative;
+        height:100%;
+    }
+    .img-centered {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .button-inner{
+        margin-top: 3px;
+    }
+}
