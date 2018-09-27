@@ -9,15 +9,22 @@ page-edit-profile {
         .toolbar-title-md {
             text-align: center;
             margin-left: -23px;
+            margin-top: 4px;
         }
         .toolbar-title-ios {
             text-align: center;
         }
         .item-md{
             background-color: transparent;
+            height:3.2rem;
+            margin-top: 15px;
+            min-height:3.2rem;
         }
         .item-ios{
             background-color: transparent;
+            height:3.9rem;
+            margin-top: 12px;
+            min-height:3.9rem;
         }
           
         .text-input::-webkit-input-placeholder {
@@ -37,6 +44,7 @@ page-edit-profile {
               width: 50%;
               box-shadow:none;
               -webkit-box-shadow:none;
+              font-family: "Lato-Bold"
           }
           .button-ios {
             display: flex;    
@@ -49,6 +57,7 @@ page-edit-profile {
             width: 50%;
             box-shadow:none;
             -webkit-box-shadow:none;
+            font-family: "Lato-Bold"
         }
         .img-profile{
             display: block;
@@ -62,9 +71,14 @@ page-edit-profile {
             text-align: center;
             margin-top: 0px;
             font-family: Loto-Regular;
+            margin-bottom: 25px;
         }
         ion-navbar[hidebackbutton] button[menutoggle] {
             display: block !important;
+          }
+          .button-inner{
+              
+    margin-top: 5px;
           }
     }
     

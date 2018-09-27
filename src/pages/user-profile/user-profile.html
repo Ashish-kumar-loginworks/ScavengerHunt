@@ -36,7 +36,7 @@
   <div class="img-container">
     <img style="display: block;  width: 100%;height:100%" src="assets/imgs/bg_banner.png">
     <div class="img-top">
-      <img style="display: block;" width="100" src="assets/imgs/logo_sign_in.png">
+      <img style="display: block;" width="80" src="assets/imgs/pic.png">
     </div>
     <div class="div-name">
       <p class="p-name">Finura Dios</p>
@@ -44,7 +44,7 @@
     <div class="div-designation">
       <p  class="p-designation">
         <span style="font-size: 1.0rem;">Entrepreneur</span>
-        <span style="font-size: 1.0rem;padding-left: 7px;" >World Traveller</span>
+        <span style="font-size: 1.0rem;padding-left: 5px;" >World Traveller</span>
       </p>
     </div>
     <div class="div-description">
@@ -74,13 +74,13 @@
   </div>
   <ion-item>
     <ion-icon item-right name="search"></ion-icon>
-    <ion-input type="text" placeholder="Search Profile"></ion-input>
+    <ion-input  [(ngModel)]="search"  type="text" ></ion-input>
   </ion-item>
 
   <ion-grid *ngIf="browseState==0">
     <ion-row>
       <ion-col col-6>
-        <img width="130"  style="border-radius:15px;" src="assets/imgs/person.jpg">
+        <img width="130"  style="border-radius:15px;" src="assets/imgs/men.png">
         <div class="div-person-name">
             <p class="p-person-name">Finura Dios</p>
         </div>
@@ -92,7 +92,7 @@
         </div>
       </ion-col>
       <ion-col col-6>
-        <img width="130" style="border-radius:15px;" src="assets/imgs/person.jpg">
+        <img width="130" style="border-radius:15px;" src="assets/imgs/girl.png">
         <div class="div-person-name">
             <p class="p-person-name">Finura Dios</p>
         </div>
@@ -104,7 +104,7 @@
         </div>
       </ion-col>
       <ion-col col-6>
-        <img width="130"  style="border-radius:15px;" src="assets/imgs/person.jpg">
+        <img width="130"  style="border-radius:15px;" src="assets/imgs/men.png">
         <div class="div-person-name">
             <p class="p-person-name">Finura Dios</p>
         </div>
@@ -116,7 +116,7 @@
         </div>
       </ion-col>
       <ion-col col-6>
-        <img width="130"  style="border-radius:15px;" src="assets/imgs/person.jpg">
+        <img width="130"  style="border-radius:15px;" src="assets/imgs/girl.png">
         <div class="div-person-name">
             <p class="p-person-name">Finura Dios</p>
         </div>
@@ -133,52 +133,88 @@
 
   <div class="div-parent" *ngIf="browseState==1" >
 <div class="div-left" >
-<img style="border-radius:15px" width="80" src="assets/imgs/person.jpg" >
+<img style="border-radius:15px" width="80" src="assets/imgs/waterpark.png" >
 </div>
 <div class="div-middle" >
 <p class="p-text" style="font-size:1.4rem">Water Park</p>
-<ion-icon class="icon-style" item-start><img width="20" src="assets/icon/theme.png">Jungle</ion-icon>
-<ion-icon class="icon-style" item-start><img width="10" src="assets/icon/blue_location.png">Orlando, New york</ion-icon>
+<div style="width:10%;float:left">
+  <ion-icon class="icon-style" item-start><img width="20" style="margin-right: 2px;" src="assets/icon/theme.png"></ion-icon>
+</div>
+<div class="div-location-type">
+Jungle
+</div>
+<div style="width:8%;float:left;">
+   <ion-icon class="icon-style" style="padding-left:3px" item-start><img width="10"  style="margin-right: 2px;"src="assets/icon/blue_location.png"></ion-icon>
+</div>
+<div class="div-location-place" >
+  Orlando, New york
+</div>
+
+<!-- <ion-icon class="icon-style" item-start><img width="20" style="margin-right: 2px;" src="assets/icon/theme.png">Jungle</ion-icon>
+<ion-icon class="icon-style" style="padding-left:3px" item-start><img width="10" style="margin-right: 2px;" src="assets/icon/blue_location.png">Orlando, New york</ion-icon> -->
 </div>
 <div class="div-right" >
   <div class="div-right-inner" >
-    <p class="p-text p-points-text" style="font-size:1.2rem">Points</p>
-    <p class="p-text p-points-text">100K</p>
+    <p class="p-text p-points-text" style="font-size:1.1rem">Points</p>
+    <p class="p-text p-points-text" style="font-style:bold">100K</p>
   </div>
   </div>
   </div>
 
   <div class="div-parent" *ngIf="browseState==1">
       <div class="div-left" >
-      <img style="border-radius:15px" width="80" src="assets/imgs/person.jpg" >
+      <img style="border-radius:15px" width="80" src="assets/imgs/jungle.png" >
       </div>
       <div class="div-middle" >
       <p class="p-text" style="font-size:1.4rem">Water Park</p>
-    
-      <ion-icon class="icon-style" item-start><img width="20" src="assets/icon/theme.png">Jungle</ion-icon>
-      <ion-icon class="icon-style" item-start><img width="10" src="assets/icon/blue_location.png">Orlando, New york</ion-icon>
+    <div style="width:10%;float:left">
+      <ion-icon class="icon-style" item-start><img width="20" style="margin-right: 2px;" src="assets/icon/theme.png"></ion-icon>
+    </div>
+    <div class="div-location-type">
+    Jungle
+    </div>
+    <div style="width:8%;float:left;">
+       <ion-icon class="icon-style" style="padding-left:3px" item-start><img width="10"  style="margin-right: 2px;"src="assets/icon/blue_location.png"></ion-icon>
+    </div>
+    <div class="div-location-place">
+      Orlando, New york
+    </div>
+      <!-- <ion-icon class="icon-style" style="padding-left:3px" item-start><img width="10"  style="margin-right: 2px;"src="assets/icon/blue_location.png">Orlando, New york</ion-icon> -->
       </div>
       <div class="div-right" >
         <div class="div-right-inner" >
-          <p class="p-text p-points-text" style="font-size:1.2rem">Points</p>
-          <p class="p-text p-points-text">100K</p>
+          <p class="p-text p-points-text" style="font-size:1.1rem">Points</p>
+          <p class="p-text p-points-text" style="font-style:bold">100K</p>
         </div>
         </div>
         </div>
 
         <div class="div-parent" *ngIf="browseState==1" >
             <div class="div-left" >
-            <img style="border-radius:15px" width="80" src="assets/imgs/person.jpg" >
+            <img style="border-radius:15px" width="80" src="assets/imgs/smassh.png" >
             </div>
             <div class="div-middle" >
             <p class="p-text" style="font-size:1.4rem">Water Park</p>
-            <ion-icon class="icon-style" item-start><img width="20" src="assets/icon/theme.png">Jungle</ion-icon>
-            <ion-icon class="icon-style" item-start><img width="10" src="assets/icon/blue_location.png">Orlando, New york</ion-icon>
+            <div style="width:10%;float:left">
+              <ion-icon class="icon-style" item-start><img width="20" style="margin-right: 2px;" src="assets/icon/theme.png"></ion-icon>
+            </div>
+            <div class="div-location-type">
+            Jungle
+            </div>
+            <div style="width:8%;float:left;">
+               <ion-icon class="icon-style" style="padding-left:3px" item-start><img width="10"  style="margin-right: 2px;"src="assets/icon/blue_location.png"></ion-icon>
+            </div>
+            <div class="div-location-place">
+              Orlando, New york
+            </div>
+<!-- 
+            <ion-icon class="icon-style" item-start><img width="20" style="margin-right: 2px;" src="assets/icon/theme.png">Jungle</ion-icon>
+            <ion-icon class="icon-style" style="padding-left:3px" item-start><img width="10" style="margin-right: 2px;" src="assets/icon/blue_location.png">Orlando, New york</ion-icon> -->
             </div>
             <div class="div-right" >
               <div class="div-right-inner" >
-                <p class="p-text p-points-text" style="font-size:1.2rem">Points</p>
-                <p class="p-text p-points-text">100K</p>
+                <p class="p-text p-points-text" style="font-size:1.1rem">Points</p>
+                <p class="p-text p-points-text" style="font-style:bold">100K</p>
               </div>
               </div>
               </div>

@@ -43,7 +43,7 @@ export class MyApp {
       { title: 'User Profile', component:UserProfilePage, logo:this.icon2},
       { title: 'Edit Profile', component:EditProfilePage, logo:this.icon3},
       {title:  'Settings',component:SettingsPage,logo:this.icon4},
-      { title: 'Logout', component:SettingsPage, logo:this.icon5},
+     { title: 'Logout', component:SettingsPage, logo:this.icon5},
     ];
   }
   

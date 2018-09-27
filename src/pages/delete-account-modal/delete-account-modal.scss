@@ -11,7 +11,7 @@ page-delete-account-modal {
             border-radius:5px;
             top: 55%;
             height: 25%;
-            width:80%;
+            width:85%;
             margin: auto;
             transform: perspective(1px) translateY(-50%);
         }
@@ -48,8 +48,10 @@ page-delete-account-modal {
 
       .p-delete{
           font-family: Loto-Regular;
-          padding-top: 22px;
           font-size: 1.6rem;
+          padding-top: 25px;
+          padding-right: 20px;
+          padding-left: 20px;
       }
     }
     

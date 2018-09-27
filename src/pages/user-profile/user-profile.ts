@@ -17,8 +17,10 @@ import { EditProfilePage} from '../edit-profile/edit-profile'
 })
 export class UserProfilePage {
 browseState:any;
+search:any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.browseState=0;
+    this.search="Search Profile";
   }
 
   ionViewDidLoad() {
@@ -46,5 +48,10 @@ browseState:any;
 
   editProfile(){
     this.navCtrl.push(EditProfilePage);
+  }
+
+
+  getItems(ev: any){
+    console.log("called")
   }
 }

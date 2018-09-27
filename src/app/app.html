@@ -7,21 +7,34 @@
                 <img width="25" style="display: block;" src="assets/icon/menu_reverse.png">
             </div>
             <div class="centered">
-                <img width="90" style="display: block;" src="assets/imgs/logo_sign_in.png">
-                <p style="margin-top:-7px;color:white;text-align: center">Finura Dios</p>
-                <p style="margin-top:-15px">
+                <img width="70" style="display: block;" src="assets/imgs/side-menu-pic.png">
+                <p style="margin-top:0px;color:white;text-align: center">Finura Dios</p>
+                <p style="margin-top:-20px">
                         <span style="font-size: 0.9rem;" >Entrepreneur</span>
                         <span style="padding-left: 4px;">World Traveller</span>
                 </p>
-                <!-- <p >EntrePreneur</p>   -->
             </div>
         </div>
 
-      
-            <button ion-item *ngFor="let p of pages;let i=index" (click)="openPage(p)">
-                <img src="{{p.logo}}" style="margin-bottom: -3px;  width: 25px !important;margin-right: 20px;width: 30px;">{{p.title}}
-            </button>
-        
+            <!-- <ion-item *ngFor="let p of pages;let i=index" (click)="openPage(p)">
+               <ion-icon style="font-size:1.7rem;color:#555555;display: inline-flex"> <img src="{{p.logo}}" width="19" height="19" style="margin-bottom: 0px;margin-right:15px;">{{p.title}}</ion-icon>
+               
+            </ion-item> -->
+
+            <ion-item *ngFor="let p of pages;let i=index" (click)="openPage(p)" (click)="openPage(p)">
+                <ion-row>
+                    <ion-col col-2>
+                            <ion-icon> <img src="{{p.logo}}" width="20" height="20" style="margin-bottom: 0px;"></ion-icon>
+                    </ion-col>
+                    <ion-col col-10>
+                        <p style="padding-top:2px">{{p.title}}</p>  </ion-col>
+                </ion-row>   
+             </ion-item>
+
+             <!-- <ion-item  (click)="openPage(p)">
+                <ion-icon style="font-size:1.7rem;color:#555555;display: inline-flex"> <img src="assets/icon/logout.png" width="19" height="19" style="margin-bottom: -3px;margin-right:15px;">Logout</ion-icon> 
+             </ion-item> -->
+       
     </ion-content>
     <style>
         .input-wrapper {
@@ -29,7 +42,7 @@
         }
         .img-container {
             position: relative;
-            height: 145px;
+            height: 130px;
             background: linear-gradient(180deg, rgba(103, 226, 249, 5) 30%, rgba(103, 226, 249, 10) 3%, rgba(72, 200, 252, 1) 100%); 
         }
         .top-right {
@@ -39,7 +52,7 @@
         }
         .centered {
             position: absolute;
-            top: 57%;
+            top: 62%;
             left: 50%;
             text-align: -webkit-center;
             transform: translate(-50%, -50%);
@@ -54,6 +67,14 @@
         text-align:center;
 
     }
+    .label-md{
+        font-size:0.5rem;
+        font-family: "Loto-Regular"
+    }
+    .label-ios{
+        font-size:1.2rem;
+        font-family: "Loto-Regular"
+    }
 
 /* .list-md > .item-block:last-child {
     border-bottom: 1px solid #dedede ! important;
@@ -61,11 +82,18 @@
 .list-md .item-block .item-inner{
     border-bottom: 1px solid #dedede ! important;
 }
+.list-ios .item-block .item-inner{
+    border-bottom: 1px solid #dedede ! important;
+}
 .item-md {
-    min-height: 5.5rem;
+    min-height: 6.2rem;
+  
+}
+.item-ios {
+    min-height: 6.2rem;
   
 }
 
-    </style>
+</style>
 </ion-menu>
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

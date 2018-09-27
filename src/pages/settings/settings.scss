@@ -57,7 +57,42 @@ page-settings {
     margin: 0px;
     border-bottom: 1px solid #545454;
 }
+.item-md{
+    border-bottom: 1px solid #DEDEDE;
+    padding-left:0px;   
+}
 ion-navbar[hidebackbutton] button[menutoggle] {
     display: block !important;
   }
+//   .item-cover{
+
+//     margin-left: 25px;
+//   }
+
+.checkbox-md .checkbox-checked .checkbox-inner {
+    left: 6px;
+    top: -5px;
+    position: absolute;
+    width: 7px;
+    height: 16px;
+}
+.checkbox-ios .checkbox-checked .checkbox-inner {
+    left: 6px;
+    top: -5px;
+    position: absolute;
+    width: 7px;
+    height: 16px
+}
+.scroll-content {
+    padding-left:25px ! important;
+}
+.label-md{
+    color:#7c7c7c;
+}
+.label-ios{
+    color:#7c7c7c;
+}
+.item-md.item-block .item-inner {
+    border-bottom: 0px solid #FFF;
+}
 }
